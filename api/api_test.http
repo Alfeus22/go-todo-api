@@ -25,5 +25,13 @@ GET {{baseUrl}}/getTasks
 Authorization: Bearer {{token}}
 
 ### 4. Delete Task (Protected)
-DELETE {{baseUrl}}/tasks/69f095286f4e1a26fbaf7c4a
+DELETE {{baseUrl}}/Api/tasks/69f095286f4e1a26fbaf7c4a
 Authorization: Bearer {{token}}
+
+### 5. Create Task (Protected)
+POST {{ baseUrl }}/Api/tasks
+Authorization: Bearer{{ token }}
+
+### 6. Update Tasks (Protected)
+PACTH {{ baseUrl }}/Api/tasks/69f095286f4e1a26fbaf7c4a
+Authorization: Bearer{{ token }}
