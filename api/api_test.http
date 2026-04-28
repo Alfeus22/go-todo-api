@@ -1,0 +1,29 @@
+### Variabel (Biar gampang ganti-ganti)
+@baseUrl = http://localhost:8080
+@token = isi_token_jwt_disini
+
+### 1. Register User
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+    "username": "galih",
+    "password": "password123"
+}
+
+### 2. Login User
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+    "username": "galih",
+    "password": "password123"
+}
+
+### 3. Get All Tasks (Protected)
+GET {{baseUrl}}/getTasks
+Authorization: Bearer {{token}}
+
+### 4. Delete Task (Protected)
+DELETE {{baseUrl}}/tasks/69f095286f4e1a26fbaf7c4a
+Authorization: Bearer {{token}}
